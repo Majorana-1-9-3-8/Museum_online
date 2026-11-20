@@ -1,0 +1,14 @@
+# Blueprint Render — déploiement en 1 clic
+# Render lit ce fichier automatiquement si le dépôt contient render.yaml
+services:
+  - type: web
+    name: le-casse-du-musee
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20.20.2

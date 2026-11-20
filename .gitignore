@@ -1,0 +1,15 @@
+# Dépendances (à réinstaller sur chaque machine / hébergeur)
+node_modules/
+npm-debug.log*
+
+# Captures de test (facultatif sur le dépôt)
+shots/
+
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Variables d'environnement locales
+.env
